@@ -1,0 +1,26 @@
+# Python 编译缓存
+__pycache__/
+*.pyc
+
+# 跑的时候现写的日志，每次都会重写，没必要进仓库
+*日志*.txt
+向量化错误.txt
+
+# 查问题用的临时文件
+诊断*.bat
+诊断*.txt
+diag*.bat
+
+# 向量化的断点续传状态（跑完就没用了）
+vectors_progress.json
+
+# 顺带看一眼的中间统计
+切片预览.txt
+
+# 我自己翻 extracted/*.json 用的临时小脚本（node 写的，按页码看块）
+# extracted/ 应该只放每家公司一个 .json，别把草稿混进去
+extracted/_*.js
+
+# 这个跟作业无关（是把 Claude Code 的聊天记录导成文本用的，
+# 里面还写死了我的个人目录），不进仓库
+导出对话.py
